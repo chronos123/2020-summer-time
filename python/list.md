@@ -75,6 +75,7 @@ list(map(lambda x: x ** 2,
 numbers = [item for item in range(3, 30) if item % 3 == 0]
 
 reversed_numbers = [item ** 2 for item in reversed(numbers)]
+# reversed is lazy
 ```
 
 ## generator
@@ -97,7 +98,7 @@ reduce(lamda x,y: x+y, [1, 2, 3, 4, 5]
 
 # zip 
 
-将两个list配对成为元组
+将两个list配对成为元组(lazy)
 ```py
 names = ['Bob', 'Sue', 'Amanda']
 grade_point_averages = [3.5, 4.0, 3.75] 
