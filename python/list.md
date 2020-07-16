@@ -73,6 +73,8 @@ list(map(lambda x: x ** 2,
 ## comprehension
 ```py
 numbers = [item for item in range(3, 30) if item % 3 == 0]
+
+reversed_numbers = [item ** 2 for item in reversed(numbers)]
 ```
 
 ## generator
@@ -93,8 +95,15 @@ reduce(lamda x,y: x+y, [1, 2, 3, 4, 5]
 (((1+2)+3)+4)+5 = 15
 ```
 
+# zip 
 
-
+将两个list配对成为元组
+```py
+names = ['Bob', 'Sue', 'Amanda']
+grade_point_averages = [3.5, 4.0, 3.75] 
+for name, gpa in zip(names, grade_point_averages):
+    print(f'Name={name}; GPA={gpa}')
+```
 
 
 
