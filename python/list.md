@@ -54,6 +54,9 @@ list(filter(lambda x: x % 2 != 0, numbers))
 map中先调用一个配对函数
 ```py
 list(map(lambda x: x ** 2, numbers))
+
+# 返回一个元组
+list(map(lambda x: (x, (x - 32) * 5 / 9),fahrenheit))
 ```
 
 # filter 和 map 结合
