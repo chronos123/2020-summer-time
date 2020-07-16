@@ -1,3 +1,35 @@
+# list 的各种函数
+```py
+numbers = [3, 7, 1, 4, 2, 8, 5, 6]
+numbers *= 2
+# 复制列表加到后面
+numbers.index(7, 0, 4)
+
+color_names = ['orange', 'yellow', 'green']
+color_names.insert(0, 'red')
+color_names.extend(['indigo', 'violet'])
+color_names.append('blue')
+color_names.remove('green')
+color_names.clear()
+
+
+sample_list = []
+sample_list.extend((4, 5, 6))
+sample_list.count(4)
+```
+模拟栈结构
+```py
+stack = []
+stack.append('red')
+stack.append('green')
+stack.pop()
+```
+排序等操作
+```py
+list1 = [3, 5, -4, -1, 0, -2, -6]
+list1.sort(key=lambda x: abs(x), reverse=True)
+```
+
 # lamda函数
 
 是一种匿名的函数，被需要函数参数的函数作为变量调用
