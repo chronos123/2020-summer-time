@@ -1,4 +1,11 @@
 # list 的各种函数
+
+列表简单创建
+```py
+numbers = list(range(1, 10))
+```
+
+列表操作
 ```py
 numbers = [3, 7, 1, 4, 2, 8, 5, 6]
 numbers *= 2
