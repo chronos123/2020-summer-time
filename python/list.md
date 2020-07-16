@@ -79,7 +79,16 @@ numbers = [item for item in range(3, 30) if item % 3 == 0]
 print(list(item ** 3 for item in numbers if item % 2 == 0))
 ```
 
+# reduce function
 
+```py
+reduce(lamda x,y: x+y, [1, 2, 3, 4, 5]
+```
+
+输出
+```py
+(((1+2)+3)+4)+5 = 15
+```
 
 
 
