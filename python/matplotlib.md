@@ -1,4 +1,5 @@
 ### pyplot package
 
-documentation
+documentation:
+
 https://matplotlib.org/tutorials/index.html
