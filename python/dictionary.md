@@ -11,7 +11,7 @@ states = {'a': 1,
 len(states) 
 ```
 
-输出
+output
 
 ```py
 3
