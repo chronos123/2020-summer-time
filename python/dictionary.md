@@ -103,7 +103,17 @@ for word, count in sorted(word_counts.items()):
 print('\nNumber of unique words:', len(word_counts))
 ```
 
+### collections
 
+counter
+
+```py
+from collections import Counter
+text = ('this is sample text with several words '
+        'this is more sample text with some different words')
+counter = Counter(text.split())
+# dictioonary
+```
 
 
 
