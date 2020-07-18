@@ -139,6 +139,46 @@ country_codes.update(Australia='au')
 ```
 
 
+### dictionary comprehension
+
+```py
+months = {'January': 1, 'February': 2, 'March': 3}
+months2 = {number: name for name, number in months.items()}
+
+grades = {'Sue': [98, 87, 94], 'Bob': [84, 95, 91]}
+grades2 = {k: sum(v) / len(v) for k, v in grades.items()}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
