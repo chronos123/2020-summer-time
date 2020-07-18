@@ -131,6 +131,7 @@ for number, frequency in sorted(counter.items()):
 ```py
 country_codes = {}
 country_codes.update({'South Africa': 'za', 'I': 1})
+# can also pass in a list of two elements tuple
 
 country_codes.update(Australia='ar')
 
