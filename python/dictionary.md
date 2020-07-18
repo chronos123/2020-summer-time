@@ -126,7 +126,16 @@ for number, frequency in sorted(counter.items()):
     print(f'{number:>1}: {frequency:>12}')
 ```
 
+### update method
 
+```py
+country_codes = {}
+country_codes.update({'South Africa': 'za', 'I': 1})
+
+country_codes.update(Australia='ar')
+
+country_codes.update(Australia='au')
+```
 
 
 
