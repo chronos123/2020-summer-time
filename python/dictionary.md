@@ -114,7 +114,17 @@ text = ('this is sample text with several words '
 counter = Counter(text.split())
 # dictionary
 ```
+example
+```py
+import random
+from collections import Counter
 
+list1 = [random.randrange(1, 6) for i in range(50)]
+counter = Counter(list1)
+
+for number, frequency in sorted(counter.items()):
+    print(f'{number:>1}: {frequency:>12}')
+```
 
 
 
