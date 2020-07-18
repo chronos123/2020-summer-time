@@ -147,6 +147,8 @@ months2 = {number: name for name, number in months.items()}
 
 grades = {'Sue': [98, 87, 94], 'Bob': [84, 95, 91]}
 grades2 = {k: sum(v) / len(v) for k, v in grades.items()}
+
+{number: number ** 3 for number in range(1, 6)}
 ```
 
 
