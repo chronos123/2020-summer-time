@@ -74,10 +74,12 @@ country_capitals1 = {'Belgium': 'Brussels', 'Haiti': 'Port-au-Prince'}
 country_capitals3 = {'Haiti': 'Port-au-Prince', 'Belgium': 'Brussels'}
 
 country_capitals1 == country_capitals3
-     ```                   
+```   
+
 output
 ```py
-True```
+True
+```
 
 
 
