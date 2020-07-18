@@ -47,8 +47,24 @@ roman_numerals.get('III', 'III not in dictionary')
 ```
 
 
+### dictionary method
+get the key and value
+```py
 
+months = {'January': 1, 'February': 2, 'March': 3}
 
+months.keys() 
+
+month_view = months.keys()
+
+months.values()
+```
+create list of dictionary
+```py
+list(month.keys())
+list(month.values())
+list(month.items())
+```
 
 
 
