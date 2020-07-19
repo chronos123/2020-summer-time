@@ -10,9 +10,13 @@ numbers = np.array([2, 3, 5, 7, 11])
 各种创建方法
 ```py
 np.array([item for item in range(2, 21) if item % 2 == 0])
+# array([ 2,  4,  6,  8, 10, 12, 14, 16, 18, 20])
 
-numbers = np.array([[item for item in range(2, 11) if item %2 == 0],
-          [item for item in range(1, 9) if item % 2 != 0]])
+
+np.array([[2, 4, 6, 8, 10], [1, 3, 5, 7, 9]])
+# array([[ 2,  4,  6,  8, 10],
+#       [ 1,  3,  5,  7,  9]])
+# 不使用列表解析
 ```
 二维数组
 ```py
