@@ -73,7 +73,7 @@ disjoint  不相交集
 
 ### mutable set operators 可变集运算符
  | 运算符   | 函数   | 意义 |
- | :------   | :----- |:----:|
+ | :-----:   | :-----: |:----:|
  | \|=       | update | 并集 |
  | &=       |intersection_update| 交集|
  | -=       |difference_update|差集|
@@ -83,12 +83,23 @@ numbers = {1, 3, 5}
 numbers |= {2, 3, 4}
 numbers.update(range(10))
 ```
-### method 
+### method 类方法
 
+add 只添加集合中原来不存在的元素
+```py
+numbers.add()
+numbers.remove()
+numbers.pop()
+numbers.clear()
+```
 
+### set comprehension 集合解析
 
-
-
+与列表解析和字典解析类似
+```py
+numbers = [1, 2, 2, 3, 4, 5, 6, 6, 7, 8, 9, 10, 10]
+evens = {item for item in numbers if item % 2 == 0}
+```
 
 
 
