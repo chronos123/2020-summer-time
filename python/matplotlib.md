@@ -39,7 +39,7 @@ for bar, frequency in zip(axes.patches, frequencies):
  
  
  ### Dynamic Visualization
- 
+ FPS —— frames per second
  ```py
  
  ```
