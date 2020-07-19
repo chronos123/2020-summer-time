@@ -1,18 +1,22 @@
-### matplotlib documentation
+### Matplotlib documentation
 
 https://matplotlib.org/tutorials/index.html
 
-### numpy documentation
+### Numpy documentation
 
 https://numpy.org/doc/1.19/user/quickstart.html
 
-### seaborn documentation
+### Seaborn documentation
 
 http://seaborn.pydata.org/tutorial.html#
 
-### seaborn 建图例子
+### Seaborn 建图例子
 
 ```py
+rolls = [random.randrange(1, 7) for i in range(600)]
+
+values, frequencies = np.unique(rolls, return_counts=True)
+
 sns.set_style('whitegrid')
 
 axes = sns.barplot(x=values, y=frequencies, palette='bright')
@@ -32,3 +36,39 @@ for bar, frequency in zip(axes.patches, frequencies):
     axes.text(text_x, text_y, text, 
               fontsize=11, ha='center', va='bottom')
  ```
+ 
+ 
+ ### Dynamic Visualization
+ 
+ ```py
+ 
+ ```
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
