@@ -1,4 +1,4 @@
-### definition
+### Definition
 set is mutable; frozen set is immutable
 
 ```py
@@ -15,7 +15,7 @@ for word in sorted(set(words)):
 ```
 主要用来判断元素在不在其中
 
-### example
+### Example
 
 ```py
 numbers = list(range(10)) + list(range(5))
@@ -26,12 +26,12 @@ output
 {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
 ```
 
-### empty set
+### Empty set
 ```py
 set()
 ```
 
-### comparison
+### Comparison
 
 小于号成立意味着小的是真子集
 ```py
@@ -41,20 +41,20 @@ set()
 {1, 3, 5}.issuperset({3, 5, 1})
 ```
 
-### set（集合）数学运算
-union  并集 
+### Set（集合）数学运算
+Union  并集 
 ```py
 {1, 3, 5} | {2, 3, 4}
 
 {1, 3, 5}.union([20, 20, 3, 40, 40])
 ```
-intersection  交集 
+Intersection  交集 
 ```py
 {1, 3, 5} & {2, 3, 4}
 
 {1, 3, 5}.intersection([1, 2, 2, 3, 3, 4, 4])
 ```
-difference 差集 
+Difference 差集 
 ```py
 {1, 3, 5} - {2, 3, 4}
 
@@ -66,12 +66,12 @@ Symmetric Difference  去掉公共元素（对称差分）
 
 {1, 3, 5, 7}.symmetric_difference([2, 2, 3, 3, 4, 4])
 ```
-disjoint  不相交集 
+Disjoint  不相交集 
 ```py
 {1, 3, 5}.isdisjoint({4, 6, 1})
 ```
 
-### mutable set operators 可变集运算符
+### Mutable set operators 可变集运算符
  | 运算符   | 函数   | 意义 |
  | :-----:   | :-----: |:----:|
  | \|=       | update | 并集 |
@@ -83,7 +83,7 @@ numbers = {1, 3, 5}
 numbers |= {2, 3, 4}
 numbers.update(range(10))
 ```
-### method 类方法
+### Method 类方法
 
 add 只添加集合中原来不存在的元素
 ```py
@@ -93,7 +93,7 @@ numbers.pop()
 numbers.clear()
 ```
 
-### set comprehension 集合解析
+### Set comprehension 集合解析
 
 与列表解析和字典解析类似
 ```py
