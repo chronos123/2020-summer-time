@@ -13,6 +13,12 @@ http://seaborn.pydata.org/tutorial.html#
 ### Seaborn 建图例子
 
 ```py
+import matplotlib.pyplot as plt
+import random
+import seaborn as sns
+import numpy as np
+
+
 rolls = [random.randrange(1, 7) for i in range(600)]
 
 values, frequencies = np.unique(rolls, return_counts=True)
