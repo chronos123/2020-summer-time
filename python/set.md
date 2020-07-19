@@ -71,7 +71,27 @@ disjoint  不相交集
 {1, 3, 5}.isdisjoint({4, 6, 1})
 ```
 
-### 
+### mutable set operators 可变集运算符
+ | 运算符   | 函数   | 意义 |
+ | :------   | :----- |:----:|
+ | \|=       | update | 并集 |
+ | &=       |intersection_update| 交集|
+ | -=       |difference_update|差集|
+ | ^=       |symmetric_difference_update|差分|
+```py
+numbers = {1, 3, 5}
+numbers |= {2, 3, 4}
+numbers.update(range(10))
+```
+### method 
+
+
+
+
+
+
+
+
 
 
 
