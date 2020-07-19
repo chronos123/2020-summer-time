@@ -1,5 +1,6 @@
 ### Definition
-set is mutable; frozen set is immutable
+Set is mutable.
+Frozen set is immutable
 
 ```py
 colors = {'red', 'orange', 'yellow', 'green', 'red', 'blue'}
@@ -83,7 +84,7 @@ numbers = {1, 3, 5}
 numbers |= {2, 3, 4}
 numbers.update(range(10))
 ```
-### Method 类方法
+### Set 各种函数（类方法）
 
 add 只添加集合中原来不存在的元素
 ```py
