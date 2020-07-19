@@ -1,6 +1,6 @@
-## some trick of dictionary
+## Dictionary 用法
 
-### key
+### Key
 
 the key must be an immutable type (str, tupple, list of str, int, float) and the key must be unique
 
@@ -17,7 +17,7 @@ output
 3
 ```
 
-### manipulate dictionary
+### Manipulate dictionary
 
 ```py
 roman_numerals = {'I': 1, 'II': 2, 'III': 3, 'V': 5, 'X': 100}
@@ -47,7 +47,7 @@ roman_numerals.get('III', 'III not in dictionary')
 ```
 
 
-### dictionary method
+### Dictionary 各种函数（method）
 get the key and value
 ```py
 
@@ -66,7 +66,7 @@ list(month.values())
 list(month.items())
 ```
 
-### comparison
+### Comparison
 input
 ```py
 country_capitals1 = {'Belgium': 'Brussels', 'Haiti': 'Port-au-Prince'}
@@ -81,7 +81,7 @@ output
 True
 ```
 
-### use an empty diactionary
+### Use an empty diactionary
 ```py
 text = ('this is sample text with several words '
         'this is more sample text with some different words')
@@ -103,7 +103,7 @@ for word, count in sorted(word_counts.items()):
 print('\nNumber of unique words:', len(word_counts))
 ```
 
-### collections
+### Collections
 
 counter
 
@@ -126,7 +126,7 @@ for number, frequency in sorted(counter.items()):
     print(f'{number:>1}: {frequency:>12}')
 ```
 
-### update method
+### Update method
 
 ```py
 country_codes = {}
@@ -139,7 +139,7 @@ country_codes.update(Australia='au')
 ```
 
 
-### dictionary comprehension
+### Dictionary comprehension
 
 ```py
 months = {'January': 1, 'February': 2, 'March': 3}
