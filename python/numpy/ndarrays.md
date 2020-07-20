@@ -66,11 +66,25 @@ for i in integers.flat:
     print(i, end='  ')
 ```
 
-### 
+### 特殊赋值创建 （Filling arrays with Specific Values）
 
+```py
+np.zeros(5)
+```
+array([0., 0., 0., 0., 0.])
 
+```py
+np.ones((2, 4), dtype=int)
+```
+array([[1, 1, 1, 1],
+       [1, 1, 1, 1]])
 
-
+```py
+np.full((3, 5), 13)
+```
+array([[13, 13, 13, 13, 13],
+       [13, 13, 13, 13, 13],
+       [13, 13, 13, 13, 13]])
 
 
 
