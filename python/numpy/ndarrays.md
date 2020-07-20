@@ -50,15 +50,20 @@ integers.size
 
 integers.itemsize
 # 4
-# size of item
+# size of item (byte)
 ```
 
-iterate
+iterate 遍历
 ```py
 for row in integers:
     for column in row:
         print(column, end='  ')
     print() 
+```
+二维当成一维
+```py
+for i in integers.flat:
+    print(i, end='  ')
 ```
 
 ### 
