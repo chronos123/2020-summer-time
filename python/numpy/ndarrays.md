@@ -1,5 +1,5 @@
 ### 创建数组
-从任何序列中创建
+#### 从任何序列中创建
 ```py
 import numpy as np
 numbers = np.array([2, 3, 5, 7, 11])
@@ -7,7 +7,7 @@ numbers = np.array([2, 3, 5, 7, 11])
 # array([ 2,  3,  5,  7, 11])
 # 7 前面两个空格(留出占据位置最多的空格数并右对齐)
 ```
-各种创建方法
+#### 各种创建方法
 ```py
 np.array([item for item in range(2, 21) if item % 2 == 0])
 # array([ 2,  4,  6,  8, 10, 12, 14, 16, 18, 20])
@@ -18,7 +18,7 @@ np.array([[2, 4, 6, 8, 10], [1, 3, 5, 7, 9]])
 #       [ 1,  3,  5,  7,  9]])
 # 不使用列表解析
 ```
-二维数组
+#### 二维数组
 ```py
 np.array([[1, 2, 3], [4, 5, 6]])
 ''' array([[1, 2, 3],
@@ -27,7 +27,7 @@ np.array([[1, 2, 3], [4, 5, 6]])
 ```
 
 ### 类型 
-数据类型说明
+#### 数据类型说明
 
 https://numpy.org/doc/stable/user/basics.types.html
 ```py
@@ -53,14 +53,14 @@ integers.itemsize
 # size of item (byte)
 ```
 
-iterate 遍历
+#### iterate 遍历
 ```py
 for row in integers:
     for column in row:
         print(column, end='  ')
     print() 
 ```
-二维当成一维
+#### 二维当成一维
 ```py
 for i in integers.flat:
     print(i, end='  ')
@@ -84,17 +84,17 @@ np.full((3, 5), 13)
 ```
 
 ### Creating arrays from Ranges 直接生成数组
-整形数据 array([0, 1, 2, 3, 4])
+#### 整形数据 array([0, 1, 2, 3, 4])
 ```py
 np.arange(5)
 ```
-浮点数据 array([0.  , 0.25, 0.5 , 0.75, 1.  ])
+#### 浮点数据 array([0.  , 0.25, 0.5 , 0.75, 1.  ])
 ```py
 np.linspace(0.0, 1.0, num=5)
 # 分成5份
 # same character positions
 ```
-Reshape the array 来构建矩阵
+#### Reshape the array 来构建矩阵
 
 得到array([[ 1,  2,  3,  4,  5],
        [ 6,  7,  8,  9, 10],
@@ -104,11 +104,35 @@ Reshape the array 来构建矩阵
 np.arange(1, 21).reshape(4, 5)
 ```
 
-### 
+### ipython magic
+```py
+%timeit -n3 -r2  # 计算运行时间 3 loops; 2 runs
+%load # read code into ipython
+%save # save snippets to a file
+%run # execute .py file in ipython
+%precision # 规定近似小数点后几位
+%cd # 换盘
+%edit # 打开外部编辑器
+%history # 列出执行过的代码
+```
 
-
-
-
+### Numpy 重载运算符(Array Operators)
+```py
+numbers = np.arange(1, 6)
+```
+#### 每个数乘2
+```py
+numbers * 2
+# 创建np.array((1, 5), 2)与前相乘
+```
+#### 每个数取幂指数
+```py
+numbers ** 3
+```
+#### 相加
+```py
+numbers += 10
+```
 
 
 
