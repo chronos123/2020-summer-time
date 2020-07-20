@@ -1,4 +1,4 @@
-### 创建
+### 创建数组
 从任何序列中创建
 ```py
 import numpy as np
@@ -83,11 +83,31 @@ np.ones((2, 4), dtype=int)
 np.full((3, 5), 13)
 ```
 
-###
+### Creating arrays from Ranges 直接生成数组
+整形数据
+```py
+np.arange(5)
+```
+浮点数据
+```py
+np.linspace(0.0, 1.0, num=5)
+# 分成5份
+# same character positions
+```
+Reshape the array 来构建矩阵
 
+得到array([[ 1,  2,  3,  4,  5],
 
+       [ 6,  7,  8,  9, 10],
+       
+       [11, 12, 13, 14, 15],
+       
+       [16, 17, 18, 19, 20]])
+```py
+np.arange(1, 21).reshape(4, 5)
+```
 
-
+### 
 
 
 
