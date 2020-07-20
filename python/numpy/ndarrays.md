@@ -130,12 +130,29 @@ numbers ** 3
 ```py
 numbers += 10
 ```
+#### 两数组相乘
+```py
+numbers = np.array([11, 12, 13, 14, 15])
+numbers2 = np.linspace(1.1, 5.5, 5)
+# 要求同一维数
+numbers * numbers2
+```
+##### 输出
+```py
+array([12.1, 26.4, 42.9, 61.6, 82.5])
+```
+#### 比较
+```py
+numbers >= 13
+# 输出 array([False, False,  True,  True,  True])
 
+numbers2 < numbers
+# 输出 array([ True,  True,  True,  True,  True])
 
-
-
-
-
+numbers == numbers2
+# 输出 array([False, False, False, False, False])
+```
+###
 
 
 
