@@ -181,9 +181,12 @@ np.sqrt(numbers)
 # 输出 array([1., 2., 3., 4., 5., 6.])
 
 numbers2 = np.arange(1, 7) * 10
+# array([10, 20, 30, 40, 50, 60])
 np.add(numbers, numbers2)
+# 数组相加
 
 np.multiply(numbers2, 5)
+# 每个元素乘5
 numbers3 = numbers2.reshape(2, 3)
 
 numbers4 = np.array([2, 4, 6])
