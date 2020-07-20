@@ -84,11 +84,11 @@ np.full((3, 5), 13)
 ```
 
 ### Creating arrays from Ranges 直接生成数组
-整形数据
+整形数据 array([0, 1, 2, 3, 4])
 ```py
 np.arange(5)
 ```
-浮点数据
+浮点数据 array([0.  , 0.25, 0.5 , 0.75, 1.  ])
 ```py
 np.linspace(0.0, 1.0, num=5)
 # 分成5份
