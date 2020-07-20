@@ -153,10 +153,26 @@ numbers == numbers2
 # 输出 array([False, False, False, False, False])
 ```
 ### 计算类方法 Calculation Methods
-#### 
+```py
+import numpy as np
 
 
+grades = np.array([[87, 96, 70], [100, 87, 90],
+                   [94, 77, 90], [100, 81, 82]])
+grades.sum()
+grades.min()
+grades.max()
+grades.mean()
+grades.std()
+grades.var()
+```
+#### 对特别的行和列
+```py
+grades.mean(axis=0)
+grades.mean(axis=1)
+```
 
+###
 
 
 
