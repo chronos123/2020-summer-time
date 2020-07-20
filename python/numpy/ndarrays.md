@@ -152,7 +152,8 @@ numbers2 < numbers
 numbers == numbers2
 # 输出 array([False, False, False, False, False])
 ```
-###
+### 计算类方法 Calculation Methods
+#### 
 
 
 
