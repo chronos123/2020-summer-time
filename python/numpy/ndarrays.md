@@ -262,11 +262,23 @@ numbers2 = numbers.view()
 
 那么改变numbers2的值会改变numbers的值
 #### 小块分割
-与列表不同，列表改变原值，小块分割值不变
-
-而对于数组，列表改变原值，小块分割值改变
-## 
-
+与列表不同，列表改变原值，小块分割值不变;同时改变小块分割值，原值不变
+```py
+list1 = [1, 2, 3, 4]
+list2 = list1[1:3]
+```
+而对于数组，列表改变原值，小块分割值改变；改变小块分割值，原值改变
+```py
+numbers = np.arange(1, 6)
+#  array([1, 2, 3, 4, 5])
+numbers2 = numbers[0:3]
+```
+## Deep Copy (创造互不影响的数组）
+利用copy函数
+```py
+numbers = np.arange(1, 6)
+numbers2 = numbers.copy()
+```
 
 
 
