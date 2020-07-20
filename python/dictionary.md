@@ -2,7 +2,7 @@
 
 ### Key
 
-the key must be an immutable type (str, tupple, list of str, int, float) and the key must be unique
+#### the key must be an immutable type (str, tupple, list of str, int, float) and the key must be unique
 
 ```py
 states = {'a': 1, 
@@ -48,7 +48,7 @@ roman_numerals.get('III', 'III not in dictionary')
 
 
 ### Dictionary 各种函数（method）
-get the key and value
+#### get the key and value
 ```py
 
 months = {'January': 1, 'February': 2, 'March': 3}
@@ -67,7 +67,7 @@ list(month.items())
 ```
 
 ### Comparison
-input
+#### input
 ```py
 country_capitals1 = {'Belgium': 'Brussels', 'Haiti': 'Port-au-Prince'}
                         
@@ -76,7 +76,7 @@ country_capitals3 = {'Haiti': 'Port-au-Prince', 'Belgium': 'Brussels'}
 country_capitals1 == country_capitals3
 ```   
 
-output
+#### output
 ```py
 True
 ```
@@ -105,7 +105,7 @@ print('\nNumber of unique words:', len(word_counts))
 
 ### Collections
 
-counter
+#### counter
 
 ```py
 from collections import Counter
