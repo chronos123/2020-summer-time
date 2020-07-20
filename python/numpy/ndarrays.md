@@ -262,23 +262,108 @@ numbers2 = numbers.view()
 
 那么改变numbers2的值会改变numbers的值
 #### 小块分割
-与列表不同，列表改变原值，小块分割值不变;同时改变小块分割值，原值不变
+与列表不同，列表改变原值，小块分割值不变;同时改变小块分割值，原值不变（作为shallow）
 ```py
 list1 = [1, 2, 3, 4]
 list2 = list1[1:3]
 ```
-而对于数组，列表改变原值，小块分割值改变；改变小块分割值，原值改变
+而对于数组，列表改变原值，小块分割值改变；改变小块分割值，原值改变（作为view）
 ```py
 numbers = np.arange(1, 6)
 #  array([1, 2, 3, 4, 5])
 numbers2 = numbers[0:3]
 ```
 ## Deep Copy (创造互不影响的数组）
-利用copy函数
+利用copy函数/对其它对象利用copy.deepcopy函数
 ```py
 numbers = np.arange(1, 6)
 numbers2 = numbers.copy()
 ```
+## Reshaping and Transposing
+
+#### Reshape
+reshape函数不改变数组本身(deep copy)
+
+resize会改变数组本身行和列
+```py
+grades = np.array([[87, 96, 70], [100, 87, 90]])
+grades.resize(1, 6)
+# grades : array([[ 87,  96,  70, 100,  87,  90]])
+```
+#### 降数组为一维
+改变flattened的值不改变grades的值(deep copy)，
+
+改变ravled值会改变grades的值
+```py
+grades = np.array([[87, 96, 70], [100, 87, 90]])
+
+flattened = grades.flatten()
+
+raveled = grades.ravel()
+```
+#### 转置
+作为view
+```py
+grades.T
+```
+#### 水平和垂直堆叠（Horizontal and Vertical Stacking）
+```py
+grades = np.array([[100, 96, 70], 
+                   [100, 87, 90]])
+
+grades2 = np.array([[94, 77, 90], 
+                    [100, 81, 82]])
+
+np.hstack((grades, grades2))
+# tuple作为参数
+''' 
+array([[100,  96,  70,  94,  77,  90],
+       [100,  87,  90, 100,  81,  82]])
+'''
+
+np.vstack((grades, grades2))
+'''
+array([[100,  96,  70],
+       [100,  87,  90],
+       [ 94,  77,  90],
+       [100,  81,  82]])
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
