@@ -1,4 +1,4 @@
-### Definition
+## Definition
 #### Set is mutable.Frozen set is immutable
 
 ```py
@@ -15,7 +15,7 @@ for word in sorted(set(words)):
 ```
 主要用来判断元素在不在其中
 
-### Example
+## Example
 
 ```py
 numbers = list(range(10)) + list(range(5))
@@ -26,14 +26,14 @@ set(numbers)
 {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
 ```
 
-### Empty set
+## Empty set
 ```py
 set()
 ```
 
-### Comparison
+## Comparison
 
-####小于号成立意味着小的是真子集
+#### 小于号成立意味着小的是真子集
 ```py
 {1, 3, 5} == {3, 5, 1}
 {1, 3, 5} < {7, 3, 5, 1}
@@ -41,7 +41,7 @@ set()
 {1, 3, 5}.issuperset({3, 5, 1})
 ```
 
-### Set（集合）数学运算
+## Set（集合）数学运算
 #### Union  并集 
 ```py
 {1, 3, 5} | {2, 3, 4}
@@ -71,7 +71,7 @@ set()
 {1, 3, 5}.isdisjoint({4, 6, 1})
 ```
 
-### Mutable set operators 可变集运算符
+## Mutable set operators 可变集运算符
  | 运算符   | 函数   | 意义 |
  | :-----:   | :-----: |:----:|
  | \|=       | update | 并集 |
@@ -83,7 +83,7 @@ numbers = {1, 3, 5}
 numbers |= {2, 3, 4}
 numbers.update(range(10))
 ```
-### Set 各种函数（类方法）
+## Set 各种函数（类方法）
 
 #### Add 只添加集合中原来不存在的元素
 ```py
@@ -93,7 +93,7 @@ numbers.pop()
 numbers.clear()
 ```
 
-### Set comprehension 集合解析
+## Set comprehension 集合解析
 
 #### 与列表解析和字典解析类似
 ```py
