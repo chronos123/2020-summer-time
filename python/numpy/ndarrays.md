@@ -26,9 +26,42 @@ np.array([[1, 2, 3], [4, 5, 6]])
 '''
 ```
 
+### 类型 
+数据类型说明
+
+https://numpy.org/doc/stable/user/basics.types.html
+```py
+integers = np.array([[1, 2, 3], [4, 5, 6]])
+
+integers.dtype
+# int32
+# data type of c
+
+integers.ndim
+# 2
+# dimension
+
+integers.shape
+# (2, 3) (row, column)
+
+integers.size
+# 6 
+# number of elements
+
+integers.itemsize
+# 4
+# size of item
+```
+
+iterate
+```py
+for row in integers:
+    for column in row:
+        print(column, end='  ')
+    print() 
+```
+
 ### 
-
-
 
 
 
