@@ -174,8 +174,23 @@ grades.mean(axis=1)
 # 对行
 ```
 
-##
+## 以数组为参数的函数 (Universal Function)
+```py
+numbers = np.array([1, 4, 9, 16, 25, 36])
+np.sqrt(numbers)
+# 输出 array([1., 2., 3., 4., 5., 6.])
 
+numbers2 = np.arange(1, 7) * 10
+np.add(numbers, numbers2)
+
+np.multiply(numbers2, 5)
+numbers3 = numbers2.reshape(2, 3)
+
+numbers4 = np.array([2, 4, 6])
+np.multiply(numbers3, numbers4)
+# 一维看做列向量进行矩阵乘法
+```
+##
 
 
 
