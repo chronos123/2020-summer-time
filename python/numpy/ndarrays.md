@@ -1,4 +1,4 @@
-### 创建数组
+## 创建数组
 #### 从任何序列中创建
 ```py
 import numpy as np
@@ -26,7 +26,7 @@ np.array([[1, 2, 3], [4, 5, 6]])
 '''
 ```
 
-### 类型 
+## 类型 
 #### 数据类型说明
 
 https://numpy.org/doc/stable/user/basics.types.html
@@ -66,7 +66,7 @@ for i in integers.flat:
     print(i, end='  ')
 ```
 
-### 特殊赋值创建 （Filling arrays with Specific Values）
+## 特殊赋值创建 （Filling arrays with Specific Values）
 #### 创建array([0., 0., 0., 0., 0.])
 ```py
 np.zeros(5)
@@ -80,7 +80,7 @@ np.ones((2, 4), dtype=int)
 np.full((3, 5), 13)
 ```
 
-### Creating arrays from Ranges 直接生成数组
+## Creating arrays from Ranges 直接生成数组
 #### 整形数据 array([0, 1, 2, 3, 4])
 ```py
 np.arange(5)
@@ -101,7 +101,7 @@ np.linspace(0.0, 1.0, num=5)
 np.arange(1, 21).reshape(4, 5)
 ```
 
-### ipython magic
+## ipython magic
 ```py
 %timeit -n3 -r2  # 计算运行时间 3 loops; 2 runs
 %load # read code into ipython
@@ -113,7 +113,7 @@ np.arange(1, 21).reshape(4, 5)
 %history # 列出执行过的代码
 ```
 
-### Numpy 重载运算符(Array Operators)
+## Numpy 重载运算符(Array Operators)
 ```py
 numbers = np.arange(1, 6)
 ```
@@ -152,7 +152,7 @@ numbers2 < numbers
 numbers == numbers2
 # 输出 array([False, False, False, False, False])
 ```
-### 计算类方法 Calculation Methods
+## 计算类方法 Calculation Methods
 ```py
 import numpy as np
 
@@ -169,10 +169,12 @@ grades.var()
 #### 对特别的行和列
 ```py
 grades.mean(axis=0)
+# 对列
 grades.mean(axis=1)
+# 对行
 ```
 
-###
+##
 
 
 
