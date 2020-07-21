@@ -74,6 +74,7 @@ hardware = pd.Series(['Hammer', 'Saw', 'Wrench'])
 1       Saw
 2    Wrench
 dtype: object
+'''
 ```
 
 #### Series.str类方法类似于python string 
