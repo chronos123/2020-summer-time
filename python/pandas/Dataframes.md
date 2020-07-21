@@ -118,6 +118,7 @@ Test3	NaN	90.0	90.0	NaN	NaN
 grades[(grades >= 80) & (grades < 90)]
 ```
 #### 输出
+Numpy会显示所有符合条件的数据
 ```py
         Wally	Eva	Sam	Katie	Bob
 Test1	87.0	NaN	NaN	NaN	83.0
@@ -125,7 +126,21 @@ Test2	NaN	87.0	NaN	81.0	NaN
 Test3	NaN	NaN	NaN	82.0	85.0
 ```
 
-##
+## 访问一个数据
+```py
+grades.at['Test2', 'Eva']
+# 82
+
+grades.iat[2, 0]
+# 70(第二行第0列)
+
+grades.at['Test2', 'Eva'] = 100
+# 改变这一元素值
+
+grades.iat[1, 1] = 87
+# 改变一个元素值
+```
+## 
 
 
 
