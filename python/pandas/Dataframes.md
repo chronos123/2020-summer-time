@@ -46,6 +46,7 @@ Name: Sam, dtype: int64
 '''
 ```
 #### 对行访问
+推荐使用loc和iloc对行访问
 ```py
 grades.loc['Test1']
 '''
@@ -69,8 +70,35 @@ Name: Test2, dtype: int64
 '''
 ```
 
-## 
+## 选择行用loc和iloc
+#### 只选几行
+```py
+grades.loc['Test1':'Test3']
+# include row Test3
 
+grades.iloc[0:2]
+# don't include row 3(2+1)
+
+grades.loc[['Test1', 'Test3']]
+
+grades.iloc[[0, 2]]
+```
+#### 几行几列一起选
+```py
+grades.loc['Test1':'Test2', ['Eva', 'Katie']]
+'''
+Eva	Katie
+Test1	100	100
+Test2	87	81
+'''
+grades.iloc[[0, 2], 0:3]
+'''
+Wally	Eva	Sam
+Test1	87	100	94
+Test3	70	90	90
+'''
+```
+## 
 
 
 
