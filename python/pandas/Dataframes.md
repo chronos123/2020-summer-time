@@ -82,18 +82,19 @@ grades.iloc[0:2]
 grades.loc[['Test1', 'Test3']]
 
 grades.iloc[[0, 2]]
+# 第1行和第3行
 ```
 #### 几行几列一起选
 ```py
 grades.loc['Test1':'Test2', ['Eva', 'Katie']]
 '''
-Eva	Katie
+        Eva	Katie
 Test1	100	100
 Test2	87	81
 '''
 grades.iloc[[0, 2], 0:3]
 '''
-Wally	Eva	Sam
+       Wally	Eva	Sam
 Test1	87	100	94
 Test3	70	90	90
 '''
