@@ -113,6 +113,7 @@ Test2	96.0	NaN	NaN	NaN	NaN
 Test3	NaN	90.0	90.0	NaN	NaN
 ```
 #### 输入
+且要用 & 而不用 and
 ```py
 grades[(grades >= 80) & (grades < 90)]
 ```
