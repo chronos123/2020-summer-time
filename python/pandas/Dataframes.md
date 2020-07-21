@@ -143,6 +143,7 @@ grades.iat[1, 1] = 87
 ## 类方法
 
 #### 描述
+描述列的信息
 ```py
 grades.describe()
 '''
@@ -170,13 +171,54 @@ dtype: float64
 '''
 ```
 #### 转置
+用来描述行的信息
 ```py
+grades.T
 
+grades.T.describe()
+
+grades.T.mean()
 ```
 
+#### 排序
+```py
+grades.sort_index(ascending=False)
+# 用行的指标降序排序, 创建一个新的对象
 
+grades.sort_index(axis=1)
+# 对列的指标进行排序
 
+grades.sort_values(by='Test1', axis=1, ascending=False)
+# 对列的数据根据Test1的值降序排列
 
+grades.T.sort_values(by='Test1', ascending=False)
+# 与grades.sort_values(by='Test1', axis=1, ascending=False).T相同, 根据行数据排序并按列显示
+'''
+        Test1	Test2	Test3
+Eva	100	87	90
+Katie	100	81	82
+Sam	94	77	90
+Wally	87	96	70
+Bob	83	65	85
+'''
+
+grades.loc['Test1'].sort_values(ascending=False)
+# 对第一行降序排列
+'''
+Katie    100
+Eva      100
+Sam       94
+Wally     87
+Bob       83
+Name: Test1, dtype: int64
+'''
+```
+
+#### 对原数据进行修改
+利用**kwag（关键词变量） inplace
+```py
+grades.sort_values(by='Test1', axis=1, ascending=False, inplace=True)
+```
 
 
 
