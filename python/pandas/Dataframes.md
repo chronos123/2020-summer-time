@@ -77,12 +77,12 @@ grades.loc['Test1':'Test3']
 # include row Test3
 
 grades.iloc[0:2]
-# don't include row 3(2+1)
+# don't include row 2(从0开始)
 
 grades.loc[['Test1', 'Test3']]
 
 grades.iloc[[0, 2]]
-# 第1行和第3行
+# 第0行和第2行
 ```
 #### 几行几列一起选
 ```py
@@ -99,12 +99,32 @@ Test1	87	100	94
 Test3	70	90	90
 '''
 ```
-## 
+## 条件选择(Boolean Indexing)
+#### 输入
+```py
+grades[grades >= 90]
+```
+#### 输出
+NaN是一个缺失的数据
+```py
+	Wally	Eva	Sam	Katie	Bob
+Test1	NaN	100.0	94.0	100.0	NaN
+Test2	96.0	NaN	NaN	NaN	NaN
+Test3	NaN	90.0	90.0	NaN	NaN
+```
+#### 输入
+```py
+grades[(grades >= 80) & (grades < 90)]
+```
+#### 输出
+```py
+        Wally	Eva	Sam	Katie	Bob
+Test1	87.0	NaN	NaN	NaN	83.0
+Test2	NaN	87.0	NaN	81.0	NaN
+Test3	NaN	NaN	NaN	82.0	85.0
+```
 
-
-
-
-
+##
 
 
 
