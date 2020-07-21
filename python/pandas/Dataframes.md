@@ -26,6 +26,8 @@ Test3	70	90	90	82	85
 
 
 ## 访问
+
+#### 对列访问
 ```py
 grades['Eva']
 '''
@@ -43,8 +45,31 @@ Test3    90
 Name: Sam, dtype: int64
 '''
 ```
+#### 对行访问
+```py
+grades.loc['Test1']
+'''
+Wally     87
+Eva      100
+Sam       94
+Katie    100
+Bob       83
+Name: Test1, dtype: int64
+'''
 
+grades.iloc[1]
+# 第二行
+'''
+Wally    96
+Eva      87
+Sam      77
+Katie    81
+Bob      65
+Name: Test2, dtype: int64
+'''
+```
 
+## 
 
 
 
