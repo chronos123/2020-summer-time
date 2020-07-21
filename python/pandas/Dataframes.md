@@ -146,7 +146,7 @@ grades.iat[1, 1] = 87
 ```py
 grades.describe()
 '''
-	Wally	Eva	Sam	Katie	Bob
+	Wally	        Eva	        Sam	        Katie   	Bob
 count	3.000000	3.000000	3.000000	3.000000	3.000000
 mean	84.333333	92.333333	87.000000	87.666667	77.666667
 std	13.203535	6.806859	8.888194	10.692677	11.015141
