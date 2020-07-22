@@ -238,6 +238,11 @@ controls loop autoplay
 <html lang="">
     content
 </html>
+
+unicode 编码
+<head>
+    <meta charset="utf-8">  对全页面设定支持的字符
+</head>
 ```
 
 
