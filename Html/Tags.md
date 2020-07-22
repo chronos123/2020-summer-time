@@ -5,6 +5,8 @@
  <p> </p>  段落
  
  <span> </span> 组合行内元素
+ 
+ <div> </div>  表格
 ```
 
 ## 粗体和斜体
@@ -231,7 +233,12 @@ controls loop autoplay
 </iframe>
 ```
 
-
+## 语言
+```py
+<html lang="">
+    content
+</html>
+```
 
 
 
