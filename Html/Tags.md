@@ -181,19 +181,55 @@ sizes = "(max-width: 480px) 240px"  选择不同情况下图片大小
 ```
 
 ## 音频
-
+#### 函数
+```py
+controls loop autoplay
+```
+#### 应用
 ```py
 <audio controls src=""> </audio>
 
-<audio controls>
-    <source>
+<audio controls loop autoplay>
+    <source src="" type="">
+    <source src="" type=""; codec>
+    
+    Sorry you browser doesn't support 格式不支持显示文本
 </audio>
-
-
 ```
 
+## 视频
+需要进一步了解
+```py
+<video src="" controls> </video>
 
+<video controls>
+    <source src="" type="">
+    <source src="" type="">
+    
+    <track src="" 通常为vtt格式字幕
+    kind="captions"
+    label="english"  显示标签
+    srclang="en"  文本语言
+    default>
+    
+    加入不同字幕
+    <track src="" 通常为vtt格式字幕
+    kind="subtitles"  还有dexcriptions 描述 chapters 换节
+    label="english"
+    srclang="en"
+    default>
+   
+    
+  <p> this is a video </p> 格式不支持显示文本
+</video>
+```
 
+## 嵌入embed
+```py
+<iframe width="" height="" src="" frameboder="" allow="" allowfullscreen>
+
+</iframe>
+```
 
 
 
