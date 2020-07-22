@@ -75,14 +75,22 @@ inline 和 block-level 标签
 
 
 ## 转义字符
+1. &copy;
 
+2. &trade;
+
+3. &star;
 ```py
 <code>   </code> 显示代码
 
 转义字符
-< : &lt
-> : &gt
-& : &amp
+< : &lt;
+> : &gt;
+& : &amp;
+
+1. &copy;
+2.&trade;
+3.&star;
 ```
 
 
