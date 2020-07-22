@@ -4,9 +4,11 @@
 
  <p> </p>  段落
  
- <span> </span> 组合行内元素
+ <span> </span> 组合行内元素 inline
  
- <div> </div>  表格
+ <div> </div>  封装部分代码 block-level 没有其它能用的的时候再用
+ 
+ <article> </artilce> 封装文章 
 ```
 
 ## 粗体和斜体
