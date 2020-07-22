@@ -82,7 +82,12 @@ inline 和 block-level 标签
 转义字符
 < : &lt
 > : &gt
+& : &amp
+```
 
+
+## 缩进排版
+```py
 <br>  (无结束字符)换行符
 
 <pre>  </pre>  插入缩进(format)
