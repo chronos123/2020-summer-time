@@ -137,8 +137,48 @@ url:
    <a href>="/about/page2"> page2 </a>
 </footer>
 ```
+## 图片
+
+#### &lt;img&gt;
+```py
+<img src="" alt="" width="" height="" srcset="" sizes="">  
+src            图片的链接
+alt substute   图片的替代
+width          宽度（数字）
+height         长度（数字）
+
+srcset = "链接 2x,链接 3x,链接 4x"  用来根据显示器像素密度选择图片像素
 
 
+srcset = "链接 480w,链接 960w,链接 1440w, 链接 1920w" 根据显示器宽度选择图片大小
+
+sizes = "(max-width: 480px) 240px"  选择不同情况下图片大小
+```
+#### &lt;picture&gt
+用来在不同屏幕，不同设备上显示不同图片
+```py
+<picture>
+    <source media="(min-width: 600px)" 
+    srcset="">
+    设备满足时第一个图片加载，不满足时第二个加载:用来加载不同图片
+    <source srcset="">
+    
+    <img src=""
+    alt=""
+    width="" height="">
+    
+</picture>
+```
+#### &lt;figure&rt; 和 &lt;figcaption&rt;
+给图片附上配图文字
+```py
+<figure>
+    <img>
+    
+    <figcaption>
+    </figcaption>
+</figure>
+```
 
 
 
