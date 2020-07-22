@@ -180,7 +180,17 @@ sizes = "(max-width: 480px) 240px"  选择不同情况下图片大小
 </figure>
 ```
 
+## 音频
 
+```py
+<audio controls src=""> </audio>
+
+<audio controls>
+    <source>
+</audio>
+
+
+```
 
 
 
