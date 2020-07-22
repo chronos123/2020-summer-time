@@ -39,9 +39,75 @@ defination list
         <dd> defination<dd>
         <dd> </dd>
     <dt> term2 </dt>
-    <dd> </dd>
+        <dd> </dd>
 </dl>
 ```
+
+## 引用
+
+```py
+<cite> people </cite> 引用
+
+一块引用:
+<blockquote>  
+  <p>
+  
+  </p>
+  <cite>    </cite>
+</blockquote>
+
+
+
+<q> </q>  段内引用
+```
+
+## 类别
+inline 和 block-level 标签
+
+## 时间
+```py
+<time> </time>
+
+<time datetime="2015-05-08 19:15:22-20:30:15">8 May 2020 </time>
+```
+
+
+## 转义字符
+
+```py
+<code>   </code> 显示代码
+
+转义字符
+< : &lt
+> : &gt
+
+<br>  (无结束字符)换行符
+
+<pre>  </pre>  插入缩进(format)
+```
+
+## 上下标
+mathML 处理数学公式
+```py
+<sub> </sub>  下标
+
+<sup>  </sup>  上标
+
+<small> </small>  不重要的意义 special meaning （例如日期，参考文献）
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
