@@ -120,7 +120,22 @@ mathML 处理数学公式
 
 ## 超链接
 ```py
-<a herf="Page.html">Link </a>
+<a href="Page.html">Link </a>
+
+url:
+../  向上寻找
+
+设立主页
+<nav role="navigation" aria_role="main menu">  
+   <a href="\"> home </a>
+   <a href="\page1"> page1 </a>
+</nav>
+
+设置relative url
+<footer>
+   <a href="/about/page1"> page1 </a>
+   <a href>="/about/page2"> page2 </a>
+</footer>
 ```
 
 
