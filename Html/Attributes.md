@@ -22,7 +22,7 @@ dir="ltr" 左向右排布
 dir="rtl" 右向左排布
 ```
 
-## Aria命令
+## Aria Roles
 ```py
 aria-label 添加到辅助功能树
 
