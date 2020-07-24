@@ -1,4 +1,4 @@
-## 字符串format
+## 字符串Format
 #### 常见数据类型
 ```py
 f'{17.489:.2f}'
@@ -57,11 +57,24 @@ f'{12345678:,d}'
 f'{123456.78:,.2f}'
 # '123,456.78'
 ```
+#### 之前版本的Format
+```py
+'{:.2f}'.format(17.489)
+# '17.49'
 
+'{} {}'.format('Amanda', 'Cyan')
+# 'Amanda Cyan'
 
+'{0} {0} {1}'.format('Happy', 'Birthday')
+# 'Happy Happy Birthday'
 
+'{first} {last}'.format(first='Amanda', last='Gray')
+# 'Amanda Gray'
 
-
+'{last} {first}'.format(first='Amanda', last='Gray')
+# 'Gray Amanda'
+```
+## 字符串处理
 
 
 
