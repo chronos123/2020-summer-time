@@ -135,6 +135,8 @@ letters_list = ['A', 'B', 'C', 'D']
 # 从冒号划分字符串 ('Amanda', ': ', '89, 97, 92') 返回元组
 
 url = 'http://www.deitel.com/books/PyCDS/table_of_contents.html'
+protocol, separator, rest_of_url = url.partition('://')
+# 分割赋值
 rest_of_url, separator, document = url.rpartition('/')
 # 从右边开始分割
 
@@ -148,7 +150,14 @@ lines.splitlines()
 lines.splitlines(True)
 # ['This is line 1\n', 'This is line2\n', 'This is line3']
 ```
+#### 判断数据类型
+```py
+'-27'.isdigit()
+# 字符串是否全为数字
 
+'A9876'.isalnum()
+# 字符串是否全是字母和数字
+```
 
 
 
