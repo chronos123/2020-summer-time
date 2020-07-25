@@ -182,12 +182,12 @@ pattern = '02215'
 'Valid' if re.fullmatch(r'\d{5}', '02215') else 'Invalid'
 ```
 #### 自定义匹配
-[ ][ ]* 含第一个中括号不含第二个<br>
+[ ][ ]* 必含第一个中括号，可不含第二个，可含多个第二个<br>
 [^ ] 不含中括号内容<br>
 [ ] 含第一个中括号内容<br>
 [ ][ ]+ 有第一个括号至少含一个第二个括号<br>
 [a?] a可以有也可以没有<br>
-[]
+\t+ 一个或多个单一字符
 ```py
 'Valid' if re.fullmatch('[A-Z][a-z]*', 'Wally') else 'Invalid'
 # 匹配以大写字母开头的字符串
@@ -198,9 +198,36 @@ pattern = '02215'
 'Valid' if re.fullmatch('[A-Z][a-z]+', 'Wally') else 'Invalid'
 # 匹配大写开头要跟小写的字符串
 ```
-####  
+####  re.sub
+```py
+re.sub(r'\t', ', ', '1\t2\t3\t4')
+# 替换后面的\t为,
 
+re.sub(r'\t', ', ', '1\t2\t3\t4', count=2)
+# 替换指定个数
 
+re.split(r',\s*', '1,  2,  3,4,    5,6,7,8')
+# 通过字符匹配分割
+
+re.split(r',\s*', '1,  2,  3,4,    5,6,7,8', maxsplit=3)
+# 分割到有限个
+```
+
+#### 搜索函数
+```py
+result = re.search('Python', 'Python is fun')
+result.group() if result else 'not found'
+# 搜索到就非None, 找第一个匹配的子串
+
+result3 = re.search('Sam', 'SAM WHITE', flags=re.IGNORECASE)
+# 忽略字母大小写
+
+result = re.search('^Python', 'Python is fun')
+# ^意味着寻找是否为开头
+
+result = re.search('fun$', 'Python is fun')
+# $意味着寻找是否为结尾
+```
 
 
 
