@@ -158,8 +158,43 @@ lines.splitlines(True)
 'A9876'.isalnum()
 # 字符串是否全是字母和数字
 ```
+#### 正则表达式re
+<h5>re.fullmatch</h5>
+<ol>
+  <b>
+  <li> \d{x} x位数字字符 注意raw string</li>
+  <li> \d{x, } 至少x位数字字符</li>
+  <li> \d{x, y} x到y位数字字符</li>
+  <li> \D 非数字字符</li>
+  <li> \s 空格字符</li>
+  <li> \S 非空格字符</li>
+  <li> \w 大小写字母，数字，下划线</li>
+  <li> \W 不是上述字符</li>
+  </b>
+</ol>
 
+```py
+import re
+pattern = '02215'
+'Match' if re.fullmatch(pattern, '02215') else 'No match'
+# 'Match' 两个字符串是否相等
 
+'Valid' if re.fullmatch(r'\d{5}', '02215') else 'Invalid'
+```
+#### 自定义匹配
+[ ][ ]* 含第一个中括号不含第二个<br>
+[^ ] 不含中括号内容<br>
+[ ] 含第一个中括号内容<br>
+[ ][ ]+ 有第一个括号至少含一个第二个括号<br>
+[a?] a可以有也可以没有<br>
+[]
+```py
+'Valid' if re.fullmatch('[A-Z][a-z]*', 'Wally') else 'Invalid'
+# 匹配以大写字母开头的字符串
+
+'Match' if re.fullmatch('[^a-z]', 'A') else 'No match'
+```
+####  
 
 
 
