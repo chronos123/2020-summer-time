@@ -193,6 +193,10 @@ pattern = '02215'
 # 匹配以大写字母开头的字符串
 
 'Match' if re.fullmatch('[^a-z]', 'A') else 'No match'
+
+
+'Valid' if re.fullmatch('[A-Z][a-z]+', 'Wally') else 'Invalid'
+# 匹配大写开头要跟小写的字符串
 ```
 ####  
 
