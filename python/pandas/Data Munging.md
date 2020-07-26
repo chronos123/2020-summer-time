@@ -38,7 +38,17 @@ formatted_phone = contactsdf['Phone'].map(get_formatted_phone)
 contactsdf['Phone'] = formatted_phone
 ```
 
-
+#### 例子
+利用part unpack tuple
+```py
+def get_formatted_phone(value):
+    result = re.fullmatch(r'(\d{3})(\d{3})(\d{4})', value)
+    if result:
+        part1, part2, part3 = result.groups()
+        return '(' + part1 + ') ' + part2 + '-' + part3
+    else:       
+        return value
+```
 
 
 
