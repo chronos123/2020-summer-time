@@ -172,7 +172,9 @@ lines.splitlines(True)
   <li> \W 不是上述字符</li>
   </b>
 </ol>
+
 <h4> re.fullmatch </h4>
+
 ```py
 import re
 pattern = '02215'
