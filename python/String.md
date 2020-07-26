@@ -158,7 +158,7 @@ lines.splitlines(True)
 'A9876'.isalnum()
 # 字符串是否全是字母和数字
 ```
-#### 正则表达式re
+## 正则表达式re
 <h5>re.fullmatch</h5>
 <ol>
   <b>
