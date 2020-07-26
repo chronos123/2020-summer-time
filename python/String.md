@@ -256,8 +256,20 @@ result.group(2)
 # 'demo1@deitel.com'
 ```
 
-
-
+## 例子
+分割算式
+#### 输入
+```py
+import re
+str1 = '10 + 5'
+pattern = r'(\d+) ([\+\-\*\/]) (\d+)'
+result = re.search(pattern, str1)
+result.groups()
+```
+#### 输出
+```py
+('10', '+', '5')
+```
 
 
 
