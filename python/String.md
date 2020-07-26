@@ -172,12 +172,14 @@ lines.splitlines(True)
   <li> \W 不是上述字符</li>
   </b>
 </ol>
-
+<h4> re.fullmatch </h4>
 ```py
 import re
 pattern = '02215'
-'Match' if re.fullmatch(pattern, '02215') else 'No match'
+result = re.fullmatch(pattern, '02215')
+'Match' if result else 'No match'
 # 'Match' 两个字符串是否相等
+# 返回一个对象，可以用result.group 调用
 
 'Valid' if re.fullmatch(r'\d{5}', '02215') else 'Invalid'
 ```
