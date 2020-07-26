@@ -262,7 +262,7 @@ result.group(2)
 ```py
 import re
 str1 = '10 + 5'
-pattern = r'(\d+) ([\+\-\*\/]) (\d+)'
+pattern = r'(\d+) ([\+\-\*\/]) (\d+)' 或 pattern = r'(\d+) ([+-/*]) (\d+)'
 result = re.search(pattern, str1)
 result.groups()
 ```
