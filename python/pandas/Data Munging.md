@@ -28,8 +28,12 @@ contactsdf = pd.DataFrame(contacts,
 def get_formatted_phone(value):
     """对电话号码重新安排格式"""
     result = re.fullmatch(r'(\d{3})(\d{3})(\d{4})', value)
+    # fullmatch返回的值可以group
     return '-'.join(result.groups()) if result else value
 
+
+formatted_phone = contactsdf['Phone'].map(get_formatted_phone)
+contactsdf['Phone'] = formatted_phone
 ```
 
 
