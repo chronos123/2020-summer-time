@@ -33,6 +33,8 @@ def get_formatted_phone(value):
 
 
 formatted_phone = contactsdf['Phone'].map(get_formatted_phone)
+# map会创建新的一个Series，对之前的每个对象应用
+
 contactsdf['Phone'] = formatted_phone
 ```
 
