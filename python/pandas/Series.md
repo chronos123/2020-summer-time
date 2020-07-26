@@ -37,6 +37,9 @@ grades.std()
 
 grades.describe()
 # give some basic info
+
+grades.map(function)
+# 对序列每个对象进行函数的运算，创建新的序列
 ```
 
 ## 自定义下标(Custom indices)
