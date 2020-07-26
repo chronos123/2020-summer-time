@@ -213,11 +213,11 @@ re.split(r',\s*', '1,  2,  3,4,    5,6,7,8', maxsplit=3)
 # 分割到有限个
 ```
 
-#### 搜索函数
+#### re.search
 ```py
 result = re.search('Python', 'Python is fun')
 result.group() if result else 'not found'
-# 搜索到就非None, 找第一个匹配的子串
+# 搜索到就非None, 找第一个匹配的子串，group显示
 
 result3 = re.search('Sam', 'SAM WHITE', flags=re.IGNORECASE)
 # 忽略字母大小写
@@ -228,7 +228,33 @@ result = re.search('^Python', 'Python is fun')
 result = re.search('fun$', 'Python is fun')
 # $意味着寻找是否为结尾
 ```
+#### re.findall 和 re.finditer
+```py
+contact = 'Wally White, Home: 555-555-1234, Work: 555-555-4321'
+re.findall(r'\d{3}-\d{3}-\d{4}', contact)
+# 找出所有符合的，返回列表
 
+for phone in re.finditer(r'\d{3}-\d{3}-\d{4}', contact):
+    print(phone.group())
+# 返回（一个可遍历的）lazy iterator 用group打出
+```
+#### 寻找匹配的一部分
+```py
+text = 'Charlie Cyan, e-mail: demo1@deitel.com'
+pattern = r'([A-Z][a-z]+ [A-Z][a-z]+), e-mail: (\w+@\w+\.\w{3})'
+result = re.search(pattern, text)
+result.groups()
+# ('Charlie Cyan', 'demo1@deitel.com') 返回一个元组
+
+result.group()
+# 全部包含
+
+result.group(1)
+# 'Charlie Cyan'
+
+result.group(2)
+# 'demo1@deitel.com'
+```
 
 
 
