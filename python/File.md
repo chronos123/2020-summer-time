@@ -21,4 +21,7 @@ with open('accounts.txt', mode='r') as accounts:
         print(f'{account:<10}{name:<10}{balance:>10}')
      
 # 按行读取，file可以遍历
+
+readlines 函数 读取所有行
+遍历每行占用的内存少
 ```
