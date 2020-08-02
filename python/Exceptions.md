@@ -22,4 +22,5 @@ while True:
         print(f'{number1:.3f} / {number2:.3f} = {result:.3f}')
         break  # terminate the loop
 ```
-## 
+## Finally 语句
+Finally 语句总是会执行
