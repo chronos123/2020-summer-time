@@ -98,6 +98,7 @@ with open('accounts.csv', 'r', newline='') as accounts:
     print(f'{"Account":<10}{"Name":<10}{"Balance":>10}')
     reader = csv.reader(accounts)
     for record in reader:  
+    # 遍历reader的每行
         account, name, balance = record
         print(f'{account:<10}{name:<10}{balance:>10}')
         
