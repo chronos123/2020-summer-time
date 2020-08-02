@@ -63,8 +63,20 @@ with open('accounts.json', 'r') as accounts:
 ```
 #### 输出
 ```py
-with open('accounts.json', 'r') as accounts:
-    print(json.dumps(json.load(accounts), indent=4))
+{
+    "accounts": [
+        {
+            "account": 100,
+            "name": "Jones",
+            "balance": 24.98
+        },
+        {
+            "account": 200,
+            "name": "Doe",
+            "balance": 345.67
+        }
+    ]
+}
 ```
 
 
