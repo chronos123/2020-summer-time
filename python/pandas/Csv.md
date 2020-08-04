@@ -13,7 +13,14 @@ df.to_csv('accounts_from_dataframe.csv', index=False)
 # index=False说明不把index存在csv中
 ```
 
-## 
+## 数据分析
+```py
+titanic.describe()
+# 只找有数字的列
+
+(titanic.survived == 'yes').describe()
+# numpy的方法判断
+```
 
 
 
