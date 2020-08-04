@@ -220,10 +220,17 @@ Name: Test1, dtype: int64
 grades.sort_values(by='Test1', axis=1, ascending=False, inplace=True)
 ```
 
+## 显示头尾
+```py
+titanic.head()
 
+titanic.tail()
+```
 
-
-
+## 改列的名字
+```py
+titanic.columns = ['name', 'survived', 'sex', 'age', 'class']
+```
 
 
 
