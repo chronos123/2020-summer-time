@@ -21,6 +21,14 @@ titanic.describe()
 (titanic.survived == 'yes').describe()
 # numpy的方法判断,对其中一列
 ```
+#### 画图
+```py
+%matplotlib inline
+# 支持matplotlib
+
+histogram = titanic.hist()
+# 对dataframe作图
+```
 
 
 
