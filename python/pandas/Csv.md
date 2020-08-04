@@ -27,7 +27,7 @@ titanic.describe()
 # 支持matplotlib
 
 histogram = titanic.hist()
-# 对dataframe作图
+# 对dataframe作图,对每个数据列做一个图
 ```
 
 
