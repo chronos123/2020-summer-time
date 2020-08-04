@@ -6,6 +6,7 @@ df = pd.read_csv('accounts.csv',
 
 df.to_csv('accounts_from_dataframe.csv', index=False)
 # 用dataframe创建csv文件
+# index=False说明不把index存在csv中
 ```
 
 ## 
