@@ -19,7 +19,7 @@ titanic.describe()
 # 只找有数字的列
 
 (titanic.survived == 'yes').describe()
-# numpy的方法判断
+# numpy的方法判断,对其中一列
 ```
 
 
