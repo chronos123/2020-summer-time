@@ -8,7 +8,7 @@ class Account:
 ```
 
 ## 类中元素
-利用 <code>def __init__(self, name, balance)</code> 函数初始化类中元素
+利用 <code>def \_\_init\_\_(self, name, balance)</code> 函数初始化类中元素
 ```py
     def __init__(self, name, balance):
         """Initialize an Account object."""
