@@ -66,9 +66,25 @@ class Time:
         self._hour = hour
 ```
 
+## print 一个实例
 
+```py
+    def __str__(self):
+        """Print Time in 12-hour clock format."""
+        return (('12' if self.hour in (0, 12) else str(self.hour % 12)) + 
+                f':{self.minute:0>2}:{self.second:0>2}' + 
+                (' AM' if self.hour < 12 else ' PM'))
 
+```
 
+## 实例变量的值
+
+```py
+    def __repr__(self):
+        """Return Time string for repr()."""
+        return (f'Time(hour={self.hour}, minute={self.minute}, ' + 
+                f'second={self.second})')
+```
 
 
 
