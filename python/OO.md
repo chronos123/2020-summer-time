@@ -34,3 +34,54 @@ class Account:
         self.balance += amount
 
 ```
+
+
+## 创建私有变量
+利用
+<code>
+ @property @name.setter
+</code>
+两个关键字
+```py
+class Time:
+    """Class Time with read-write properties."""
+
+    def __init__(self, hour=0, minute=0, second=0):
+        """Initialize each attribute."""
+        self.hour = hour  # 0-23
+        self.minute = minute  # 0-59
+        self.second = second  # 0-59
+        
+    @property
+    def hour(self):
+        """Return the hour."""
+        return self._hour
+
+    @hour.setter
+    def hour(self, hour):
+        """Set the hour."""
+        if not (0 <= hour < 24):
+            raise ValueError(f'Hour ({hour}) must be 0-23')
+
+        self._hour = hour
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
