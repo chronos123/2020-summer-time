@@ -41,7 +41,7 @@ class Account:
 <code>
  @property @name.setter
 </code>
-两个关键字
+两个关键字， 防止直接输入无效数据
 ```py
 class Time:
     """Class Time with read-write properties."""
