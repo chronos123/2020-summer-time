@@ -103,7 +103,12 @@ class Time:
         return (f'Time(hour={self.hour}, minute={self.minute}, ' + 
                 f'second={self.second})')
 ```
-
+## 对输出进行格式控制
+```py
+    def __format__(self, format):
+        """Return formatted string representation for str()."""
+        return f'{str(self):{format}}'
+```
 
 
 
