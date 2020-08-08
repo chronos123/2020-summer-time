@@ -73,7 +73,17 @@ class Time:
         self.minute = minute
         self.second = second
 ```
-
+#### 利用元组
+```py
+    @property
+    def time(self):
+        return (self.hour, self.minute, self.second)
+    
+    
+    @time.setter
+    def time(self, time):
+        self.time_setter(*time)
+```
 ## print 一个实例
 
 ```py
