@@ -65,6 +65,14 @@ class Time:
 
         self._hour = hour
 ```
+#### 改变值
+```py
+    def set_time(self, hour=0, minute=0, second=0):
+        """Set values of hour, minute, and second."""
+        self.hour = hour
+        self.minute = minute
+        self.second = second
+```
 
 ## print 一个实例
 
