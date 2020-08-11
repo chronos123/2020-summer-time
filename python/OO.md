@@ -107,10 +107,39 @@ class Time:
 ```py
     def __format__(self, format):
         """Return formatted string representation for str()."""
-        return f'{str(self):{format}}'
+        return f'{str(self):{format}}'       
 ```
+#### 输入
+```py
+class Date_time():
+    format_dict = {
+        'ymd':"{0.year}-{0.mon}-{0.day}",
+        "mdy":"{0.day}:{0.mon}:{0.year}"
+    }
 
+    def __init__(self,year,mon,day):
+        self.year = year
+        self.mon = mon
+        self.day = day
 
+    def __format__(self, format_spec='ymd'):
+        try:
+            return self.format_dict[format_spec].format(self)
+        except KeyError :
+            return '{0.year}-{0.mon}-{0.day}'.format(self)
+
+xx = Date_time('2018','10','14')
+
+print(xx.__format__('ymd'))
+print(xx.__format__('mdy'))
+print(xx.__format__())
+```
+## 输出
+```py
+2018-10-14
+14:10:2018
+2018-10-14
+```
 
 
 
