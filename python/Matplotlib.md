@@ -90,7 +90,7 @@ die_animation = animation.FuncAnimation(
 plt.show()  # display window
  ```
  
- ## image
+ ### image
  
  ```py
  import matplotlib.image as mpimg
@@ -110,9 +110,9 @@ for axes in axes_list.ravel():
     image_name = deck_of_cards.deal_card().image_name
     # 调用图像名字
     img = mpimg.imread(str(path.joinpath(image_name).resolve()))
-    # reslove从path实例中找到完整的路径
+    # reslove从path实例中找到完整的路径，读取图片
     axes.imshow(img)
-
+    # 在坐标轴上放置图片
  ```
  
  
