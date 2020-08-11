@@ -90,7 +90,30 @@ die_animation = animation.FuncAnimation(
 plt.show()  # display window
  ```
  
+ ## image
  
+ ```py
+ import matplotlib.image as mpimg
+ import matplotlib.pyplot as plt
+ 
+ figure, axes_list = plt.subplots(nrows=4, ncols=13)
+ # 建立一个图像区域， 返回一个元组, list为二维
+ 
+figure.set_figwidth(16)
+figure.set_figheight(9)
+# 设立图像区域大小
+
+for axes in axes_list.ravel():
+    axes.get_xaxis().set_visible(False)
+    axes.get_yaxis().set_visible(False)
+    # 隐藏坐标轴
+    image_name = deck_of_cards.deal_card().image_name
+    # 调用图像名字
+    img = mpimg.imread(str(path.joinpath(image_name).resolve()))
+    # reslove从path实例中找到完整的路径
+    axes.imshow(img)
+
+ ```
  
  
  
