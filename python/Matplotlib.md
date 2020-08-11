@@ -104,6 +104,7 @@ figure.set_figheight(9)
 # 设立图像区域大小
 
 for axes in axes_list.ravel():
+# ravel降维对numpy array
     axes.get_xaxis().set_visible(False)
     axes.get_yaxis().set_visible(False)
     # 隐藏坐标轴
@@ -113,6 +114,11 @@ for axes in axes_list.ravel():
     # reslove从path实例中找到完整的路径，读取图片
     axes.imshow(img)
     # 在坐标轴上放置图片
+
+# 已经可以展示一组牌，有很多空白的地方
+
+figure.tight_layout()
+# 减少空白的地方
  ```
  
  
