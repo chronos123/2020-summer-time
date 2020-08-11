@@ -90,7 +90,7 @@ die_animation = animation.FuncAnimation(
 plt.show()  # display window
  ```
  
- ### image
+ ### image ———— 展示一组图像
  
  ```py
  import matplotlib.image as mpimg
