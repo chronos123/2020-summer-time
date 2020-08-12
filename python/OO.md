@@ -154,6 +154,13 @@ class SalariedCommissionEmployee(CommissionEmployee):
                          gross_sales, commission_rate)
         self.base_salary = base_salary  # validate via property
 # super().__init__ 用父类的初始化方法
+
+    def __repr__(self):
+        """Return string representation for repr()."""
+        return ('Salaried' + super().__repr__() +      
+            f'\nbase salary: {self.base_salary:.2f}')
+            
+# super().__repr__ 使用父类的展示方法
 ```
 
 
