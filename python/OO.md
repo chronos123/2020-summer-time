@@ -163,9 +163,16 @@ class SalariedCommissionEmployee(CommissionEmployee):
 # super().__repr__ 使用父类的展示方法
 ```
 
+#### 多态
+```py
+    def earnings(self):
+        """Calculate earnings."""   
+        return super().earnings() + self.base_salary
 
+# 对SalariedCommissionEmployee类的earning的重新定义
+```
 
-
+##
 
 
 
