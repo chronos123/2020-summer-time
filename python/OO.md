@@ -172,7 +172,14 @@ class SalariedCommissionEmployee(CommissionEmployee):
 # 对SalariedCommissionEmployee类的earning的重新定义
 ```
 
-##
+#### 验证关系
+```py
+issubclass(SalariedCommissionEmployee, CommissionEmployee)
+
+isinstance(s, CommissionEmployee)
+
+isinstance(s, SalariedCommissionEmployee)
+```
 
 
 
