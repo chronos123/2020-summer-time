@@ -141,7 +141,20 @@ print(xx.__format__())
 2018-10-14
 ```
 
+## 继承
+```py
+class SalariedCommissionEmployee(CommissionEmployee):
+    """An employee who gets paid a salary plus 
+    commission based on gross sales."""
 
+    def __init__(self, first_name, last_name, ssn, 
+                 gross_sales, commission_rate, base_salary):
+        """Initialize SalariedCommissionEmployee's attributes."""
+        super().__init__(first_name, last_name, ssn, 
+                         gross_sales, commission_rate)
+        self.base_salary = base_salary  # validate via property
+# super().__init__ 用父类的初始化方法
+```
 
 
 
