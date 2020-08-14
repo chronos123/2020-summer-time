@@ -187,7 +187,7 @@ isinstance(s, SalariedCommissionEmployee)
  
  <ul>
    <li>         方法名                  运算符和表达式      说明  </li>
-     <li>        __add__(self,rhs)           self + rhs        加法    </li>
+     <li>        __add__(self,rhs)          self + rhs        加法    </li>
     <li>         __sub__(self,rhs)          self - rhs         减法</li>
      <li>        __mul__(self,rhs)          self * rhs         乘法</li>
       <li>       __truediv__(self,rhs)     self / rhs          除法</li>
