@@ -181,7 +181,22 @@ isinstance(s, CommissionEmployee)
 isinstance(s, SalariedCommissionEmployee)
 ```
 
+## 重载运算符
+```py
 
+
+    def __add__(self, right):
+        """Overrides the + operator."""
+        return Complex(self.real + right.real, 
+                       self.imaginary + right.imaginary)
+                       
+                       
+    def __iadd__(self, right):
+        """Overrides the += operator."""
+        self.real += right.real
+        self.imaginary += right.imaginary
+        return self
+```
 
 
 
