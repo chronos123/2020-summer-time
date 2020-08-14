@@ -186,16 +186,17 @@ isinstance(s, SalariedCommissionEmployee)
  <h4> 算术运算符的重载:  </h4>
  
  <ul>
-   <li>         方法名                  运算符和表达式      说明  </li>
-     <li>        __add__(self,rhs)          self + rhs        加法    </li>
-    <li>         __sub__(self,rhs)          self - rhs         减法</li>
-     <li>        __mul__(self,rhs)          self * rhs         乘法</li>
-      <li>       __truediv__(self,rhs)     self / rhs          除法</li>
-      <li>       __floordiv__(self,rhs)    self //rhs          地板除</li>
-      <li>       __mod__(self,rhs)         self % rhs       取模(求余)</li>
-       <li>      __pow__(self,rhs)         self **rhs         幂运算</li>
+   <li>         方法名      &emsp;              运算符和表达式  &emsp;      说明  </li>
+     <li>        __add__(self,rhs)   &emsp;         self + rhs    &emsp;      加法    </li>
+    <li>         __sub__(self,rhs)    &emsp;        self - rhs  &emsp;         减法</li>
+     <li>        __mul__(self,rhs)      &emsp;      self * rhs   &emsp;        乘法</li>
+      <li>       __truediv__(self,rhs)   &emsp;    self / rhs   &emsp;         除法</li>
+      <li>       __floordiv__(self,rhs) &emsp;     self //rhs   &emsp;         地板除</li>
+      <li>       __mod__(self,rhs)    &emsp;       self % rhs    &emsp;     取模(求余)</li>
+       <li>      __pow__(self,rhs)    &emsp;       self **rhs     &emsp;      幂运算</li>
             
 </ul>
+
 ```py
 
 
