@@ -6,11 +6,11 @@
 &emsp; &emsp;  &emsp;       输出
 
 输出出错时：只要第一行和最后一行 <br>
-<code>
-          Traceback (most recent call last): \n
-            ... \n
+<article>
+          Traceback (most recent call last): 
+            ... 
         ValueError: Initial balance must be >= to 0.00.  
-</code>
+</article>
 ```py
 class Account:
     """Account class for demonstrating doctest."""
