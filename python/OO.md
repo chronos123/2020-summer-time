@@ -213,6 +213,84 @@ isinstance(s, SalariedCommissionEmployee)
         return self
 ```
 
+## 数据类
+利用@dataclass 修饰器
+```py
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
