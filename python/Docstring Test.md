@@ -7,8 +7,8 @@
 
 输出出错时：只要第一行和最后一行 <br>
 <code>
-          Traceback (most recent call last): <br>
-            ... <br>
+          Traceback (most recent call last): \n
+            ... \n
         ValueError: Initial balance must be >= to 0.00.  
 </code>
 ```py
