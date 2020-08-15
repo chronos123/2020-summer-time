@@ -5,10 +5,10 @@
 &nbsp; >>> 测试代码 <br>
 &emsp; &emsp;  &emsp;       输出
 
-输出出错时：只要第一行和最后一行
+输出出错时：只要第一行和最后一行 <br>
 <code>
-          Traceback (most recent call last):
-            ...
+          Traceback (most recent call last): <br>
+            ... <br>
         ValueError: Initial balance must be >= to 0.00.  
 </code>
 ```py
