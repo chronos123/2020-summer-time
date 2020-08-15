@@ -48,3 +48,29 @@ class Account:
 
         self.balance += amount
 ```
+
+#### __main__函数
+
+```py
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod(verbose=True)
+# 当作为代码直接执行时，执行，进行doctest, verbose将输出一些结果
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
