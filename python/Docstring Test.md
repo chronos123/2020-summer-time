@@ -7,10 +7,11 @@
 
 输出出错时：只要第一行和最后一行 <br>
 <article>
-          Traceback (most recent call last): 
-            ... 
+          Traceback (most recent call last): <br>
+            ...  <br>
         ValueError: Initial balance must be >= to 0.00.  
 </article>
+
 ```py
 class Account:
     """Account class for demonstrating doctest."""
