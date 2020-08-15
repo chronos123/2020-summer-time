@@ -58,7 +58,11 @@ if __name__ == '__main__':
 # 当作为代码直接执行时，执行，进行doctest, verbose将输出一些结果
 ```
 
-
+#### 输入
+在终端ipython模式下输入
+```py
+%doctest_mode
+```
 
 
 
