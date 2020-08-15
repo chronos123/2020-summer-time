@@ -214,7 +214,7 @@ isinstance(s, SalariedCommissionEmployee)
 ```
 
 ## 数据类
-利用@dataclass 修饰器，变量要有冒号连接的注释，表明数据类型，变量定义不在__init__中
+利用@dataclass 修饰器，定义类变量要有冒号连接的注释ClassVar[]，表明数据类型。 <br>  变量定义不在__init__中，实例变量要用冒号标明类型
 ```py
 from dataclasses import dataclass
 from typing import ClassVar, List
