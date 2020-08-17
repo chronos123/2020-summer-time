@@ -244,7 +244,9 @@ class Card:
 ```
 
 
+## 名称和作用域
 
+Local Global Built-In
 
 
 
