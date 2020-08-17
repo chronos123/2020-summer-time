@@ -245,8 +245,16 @@ class Card:
 
 
 ## 名称和作用域
+```py
+Local
+Global
+Built-In
 
-Local Global Built-In
+Enclosing Namespace
+
+# LEGB rule 寻找命名的顺序
+```
+
 
 
 
