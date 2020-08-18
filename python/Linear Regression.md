@@ -10,4 +10,6 @@ sns.set_style('whitegrid')
 axes = sns.regplot(x=nyc.Date, y=nyc.Temperature)
 
 axes.set_ylim(10, 70)
+
+
 ```
