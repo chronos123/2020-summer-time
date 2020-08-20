@@ -60,6 +60,32 @@ word.lemmatize()
 blob = TextBlob(Path('RomeoAndJuliet.txt').read_text(encoding='UTF-8'))
 blob.word_counts()
 # 单词计数
+
+happy = Word('happy')
+happy.definitions
+# 单词的定义
+
+
+happy.synsets
+# 近义词
+
+synonyms = set()
+# 创建字典
+
+synonyms = set()
+# 创建集合
+for synset in happy.synsets:
+    # synset,lemmas()得到lemmas列表
+    for lemma in synset.lemmas():
+    # lemma.name()得到单词
+        synonyms.add(lemma.name())
+        
+lemmas = happy.synsets[0].lemmas()
+# [Lemma('happy.a.01.happy')]
+        
+lemmas[0].antonyms()
+# [Lemma('unhappy.a.01.unhappy')]
+# 反义词
 ```
 
 
