@@ -56,6 +56,10 @@ word.stem()
 
 word.lemmatize()
 # 原词
+
+blob = TextBlob(Path('RomeoAndJuliet.txt').read_text(encoding='UTF-8'))
+blob.word_counts()
+# 单词计数
 ```
 
 
