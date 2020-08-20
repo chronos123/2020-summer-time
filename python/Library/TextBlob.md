@@ -17,4 +17,111 @@ blob.sentiment
 blob.sentiment.polarity
 blob.sentiment.subjectivity
 # 判断主观性和正面反面
+
+blob.detect_language()
+
+chinese = blob.translate(to='zh')
 ```
+
+##  NaiveBayesAnalyzer分析器
+```py
+from textblob.sentiments import NaiveBayesAnalyzer
+
+blob = TextBlob(text, analyzer=NaiveBayesAnalyzer())
+blob.sentiment
+# sentiment分析方法不同
+```
+
+## Word类
+```py
+from textblob import Word
+
+index = Word('index')
+index.pluralize()
+cacti = Word('cacti')
+cacti.singularize()
+# 单数复数转换
+
+animals = TextBlob('dog cat fish bird').words
+animals.pluralize()
+
+word.spellcheck()
+# 检查拼写
+
+word.correct()
+# 用概率最大的替代
+
+word.stem()
+# 词根
+
+word.lemmatize()
+# 原词
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
