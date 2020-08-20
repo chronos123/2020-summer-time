@@ -16,5 +16,5 @@ blob.noun_phrases
 blob.sentiment
 blob.sentiment.polarity
 blob.sentiment.subjectivity
-# 判断主观客观
+# 判断主观性和正面反面
 ```
