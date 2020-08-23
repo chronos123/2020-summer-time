@@ -88,6 +88,13 @@ lemmas[0].antonyms()
 # 反义词
 ```
 
+## n-grams
+```py
+text = 'Today is a beautiful day. Tomorrow looks like bad weather.'
+blob = TextBlob(text)
+blob.ngrams()
+blob.ngrams(n=5)
+```
 
 
 
