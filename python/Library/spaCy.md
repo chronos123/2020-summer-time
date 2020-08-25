@@ -20,5 +20,5 @@ document2 = nlp(Path('EdwardTheSecond.txt').read_text())
 
 
 document1.similarity(document2)
-# 比较文件相似性 spacy doc 对象  比较词频等
+# 比较文件相似性 spacy doc对象，比较词频等
 ```
