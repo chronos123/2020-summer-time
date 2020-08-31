@@ -1,4 +1,7 @@
 ## First game window
+
+pygame.display.update 只改变要改的
+pygame.display.flip 刷新全屏
 ```py
 import pygame
 
