@@ -9,5 +9,6 @@ https://github.com/labuladong/fucking-algorithm
 重叠子问题 <br>
 <br>
 可以用递归备忘录 <br>
-也可以用数组实现
+也可以用数组实现 <br>
+状态是原问题和子问题中变化的量
 
