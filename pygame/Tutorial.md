@@ -37,7 +37,20 @@ while running:
 ```
 
 ## Tilte Icon Logle
+```py
+pygame.display.set_caption("Space Invaders")
+icon = pygame.image.load('ufo.jpg')
+pygame.display.set_icon(icon)
 
+# 背景
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    screen.fill((0, 0, 0))
+    # 背景句 RGB red green blue
+```
 
 
 
