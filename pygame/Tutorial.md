@@ -49,6 +49,7 @@ while running:
             running = False
 
     screen.fill((0, 0, 0))
+    pygame.display.update()
     # 背景句 RGB red green blue
 ```
 
