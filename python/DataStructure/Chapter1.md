@@ -12,4 +12,9 @@ https://github.com/labuladong/fucking-algorithm
 也可以用数组实现 <br>
 状态是原问题和子问题中变化的量
 
-回溯算法详解
+## 回溯算法详解
+
+前序遍历选择，后序遍历撤销
+
+## 二分查找
+
