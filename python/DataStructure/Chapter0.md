@@ -133,7 +133,42 @@ return res;
 
 #### 例2
 找到字符串中所有字母异位词
-```c++
+```py
+def find_anagrams(s: str, t: str):
+    left = 0
+    right = 0
+    match = 0
+    res = ''
 
+    windows = {}
+    needs = {}
+
+    for c in t:
+        if c in needs:
+            needs[c] += 1
+        else:
+            needs[c] = 1
+
+    while right < len(s):
+        c1 = s[right]
+        if c1 in needs:
+            if c1 in windows:
+                windows[c1] += 1
+            else:
+                windows[c1] = 1
+
+            if windows[c1] == needs[c1]:
+                match += 1
+        right += 1
+        while match == len(needs):
+            if right - left == len(t):
+                res += s[left: right] + '\n'
+            c2 = s[left]
+            if c2 in needs:
+                windows[c2] -= 1
+                if windows.get(c2, -1) < needs[c2]:
+                    match -= 1
+            left += 1
+    return res
 ```
 
