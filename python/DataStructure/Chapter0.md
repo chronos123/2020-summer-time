@@ -131,6 +131,45 @@ while (right < s.size()) {
 return res;
 ```
 
+python代码
+```py
+class Solution:
+    def minWindow(self, s: str, t: str) -> str:
+        # 最短子串开始位置和长度
+        start, min_len = 0, float('Inf')
+        left, right = 0, 0
+        res = s
+        
+        # 两个计数器
+        needs = Counter(t)
+        window = collections.defaultdict(int) 
+        # defaultdict在访问的key不存在的时候返回默认值0, 可以减少一次逻辑判断
+        
+        match = 0
+        
+        while right < len(s):
+            c1 = s[right]
+            if needs[c1] > 0:
+                window[c1] += 1
+                if window[c1] == needs[c1]:
+                    match += 1
+            right += 1
+            
+            while match == len(needs):
+                if right - left < min_len:
+                    # 更新最小子串长度
+                    min_len = right - left
+                    start = left
+                c2 = s[left]
+                if needs[c2] > 0:
+                    window[c2] -= 1
+                    if window[c2] < needs[c2]:
+                        match -= 1
+                left += 1
+        
+        return s[start:start+min_len] if min_len != float("Inf") else ""
+```
+
 #### 例2
 找到字符串中所有字母异位词
 ```py
