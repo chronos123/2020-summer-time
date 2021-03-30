@@ -351,7 +351,7 @@ np.pad(A,((3,2),(2,3)),'constant',constant_values = (0,0))  #constant_valuesè¡¨ç
 >>>array([ 0,  1,  2,  3,  4, 50, 60, 70, 80, 90])
 
 
-index = np.where(A == a)
+idx, idy = np.where(A == a)
 ```
 
 
