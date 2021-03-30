@@ -352,7 +352,7 @@ np.pad(A,((3,2),(2,3)),'constant',constant_values = (0,0))  #constant_valuesè¡¨ç
 
 
 index = np.where(A == a)
-``
+```
 
 
 
